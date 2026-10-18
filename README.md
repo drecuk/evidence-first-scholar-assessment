@@ -1,8 +1,8 @@
 # Evidence-First Scholar Assessment
 
-Evidence-First Scholar Assessment is a Codex plugin for rigorous, auditable evaluation of an academic's research quality and scholarly influence. It is intended for promotion and tenure, senior appointments, chair-professorship review, peer benchmarking, and research due diligence.
+Evidence-First Scholar Assessment is a Codex plugin for rigorous, auditable evaluation of an academic's research quality and scholarly influence.
 
-The evaluator begins with the work itself: it validates the scholar's bibliographic identity, reads and evaluates selected outputs, attributes the candidate's contribution, examines scholarly uptake and durability, compares genuinely similar peers under common rules, and makes uncertainty visible. It does not turn a Google Scholar total, journal title, university affiliation, or administrative rank into a quality judgment.
+The evaluator begins by validating the scholar's bibliographic identity, reads and evaluates selected outputs, attributes the candidate's contribution, examines scholarly uptake and durability, compares genuinely similar peers under common rules, and makes uncertainty visible. It does not turn a Google Scholar total, journal title, university affiliation, or administrative rank into a quality judgment.
 
 ## DORA-informed assessment
 
@@ -10,7 +10,7 @@ The evaluator begins with the work itself: it validates the scholar's bibliograp
 
 This plugin is **DORA-informed**, not DORA-certified, endorsed, or affiliated. Qualitative assessment of outputs leads; transparent and contextual indicators support it.
 
-Google Scholar profiles do not inherently conflict with DORA. The plugin can use dated, identity-checked citation counts, h-index values, and i10-index values as descriptive context and cross-check them against a validated work corpus. It must not use those figures as automatic scores, proof of quality, universal thresholds, or substitutes for reading the research. Self-declared Google Scholar interest labels are treated only as observed discoverability signals—not official field rankings.
+The plugin can use dated, identity-checked citation counts, h-index values, and i10-index values as descriptive context and cross-check them against a validated work corpus.
 
 ## What it does
 
@@ -88,7 +88,7 @@ The [release ZIP](https://github.com/drecuk/evidence-first-scholar-assessment/re
 
 - “Assess this scholar's research quality and impact using an evidence-first, DORA-informed approach.”
 - “Audit this Google Scholar profile for identity errors and explain what the metrics do—and do not—show.”
-- “Create an auditable chair-professorship research assessment with matched peers and sensitivity analysis.”
+- “Create an auditable research assessment with matched peers and sensitivity analysis.”
 
 ## Repository layout
 
