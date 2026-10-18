@@ -6,7 +6,7 @@ The evaluator begins by validating the scholar's bibliographic identity, reads a
 
 ## Instruction Prompt
 
-The instruction prompt is simple:
+The instruction prompt is simple. After installation, type this into Codex:
 
 ```
    Evaluate this scholar: [provide a web link to the scholar profile/bio, or a google scholar page]
