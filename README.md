@@ -4,6 +4,15 @@ Evidence-First Scholar Assessment is a Codex plugin for rigorous, auditable eval
 
 The evaluator begins by validating the scholar's bibliographic identity, reads and evaluates selected outputs, attributes the candidate's contribution, examines scholarly uptake and durability, compares genuinely similar peers under common rules, and makes uncertainty visible. It does not turn a Google Scholar total, journal title, university affiliation, or administrative rank into a quality judgment.
 
+## Instruction Prompt
+
+The instruction prompt is simple:
+
+```
+   Evaluate this scholar: [provide a web link to the scholar profile/bio, or a google scholar page]
+   Generate a comprehensive PDF report
+```
+
 ## DORA-informed assessment
 
 [DORA](https://sfdora.org/) is the San Francisco Declaration on Research Assessment, a global initiative to improve how research and researchers are evaluated. Its central recommendation is to assess research on its own merits rather than use journal-based metrics as a substitute for the quality of individual work. See [Read the Declaration](https://sfdora.org/read/) and DORA's [guidance on responsible quantitative indicators](https://sfdora.org/resource/guidance-on-the-responsible-use-of-quantitative-indicators-in-research-assessment/).
