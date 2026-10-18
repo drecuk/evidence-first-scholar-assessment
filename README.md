@@ -26,25 +26,63 @@ Google Scholar profiles do not inherently conflict with DORA. The plugin can use
 
 It does **not** provide an automatic scholar ranking or replace disciplinary expert judgment. It never fabricates expert reviews. A report remains provisional when decision-critical evidence is unavailable.
 
-## Install from the Git-backed marketplace
+## Install from this GitHub repository
 
-```bash
-codex plugin marketplace add drecuk/evidence-first-scholar-assessment
-```
+1. Install or open the ChatGPT desktop app. It is required separately from Node.js and Codex CLI.
+2. Install a supported [Node.js LTS release](https://nodejs.org/) if it is not already available. Node.js 22 or later is recommended. Node.js supplies the runtime and the `npm` package manager used to install Codex CLI.
+3. Check that Node.js and npm are available in your console or terminal:
 
-Restart the ChatGPT desktop app, open the Plugins Directory, choose **drecuk Scholar Tools**, and install **Evidence-First Scholar Review**.
+   ```sh
+   node --version
+   npm --version
+   ```
 
-To refresh later:
+4. Install Codex CLI separately:
 
-```bash
+   ```sh
+   npm install -g @openai/codex@latest
+   ```
+
+5. Check that Codex is available:
+
+   ```sh
+   codex --version
+   ```
+
+6. Add this repository as a Codex plugin marketplace:
+
+   ```sh
+   codex plugin marketplace add drecuk/evidence-first-scholar-assessment
+   ```
+
+7. Restart the ChatGPT desktop app so the new marketplace is loaded.
+8. Open the **Plugins Directory**, select the **drecuk Scholar Tools** marketplace, open **Evidence-First Scholar Review**, and select **Install**.
+9. Start a new conversation and try a research-assessment request such as:
+
+   > Assess the research quality and scholarly impact of Professor [Name] for a senior appointment. Begin by validating bibliographic identity and evidence access, and use a DORA-informed, evidence-first method.
+
+10. Supply the relevant CV, institutional profile, publication list, Google Scholar profile, ORCID, or other identifiers that you are authorized to use. Review the proposed scope, evidence-access plan, identity decisions, date windows, and peer-selection rule. Request corrections before the evaluator relies on the corpus.
+11. When the identity and assessment rules are correct, explicitly confirm them, for example:
+
+    > The identity, corpus rules, date windows, and peer-selection approach are approved. Continue with the full assessment and matched-peer benchmark.
+
+12. Review the generated report, committee brief, evidence tables, source and search logs, claims ledger, metrics, sensitivity analysis, and QA record. The plugin supports expert and committee judgment; it does not make an appointment decision or turn bibliometric indicators into an automatic ranking.
+
+To refresh the repository package after a new release:
+
+```sh
 codex plugin marketplace upgrade drecuk-scholar-tools
 ```
 
+Restart the ChatGPT desktop app after upgrading if the new version does not appear immediately.
+
 You can also clone the repository and add its root as a local marketplace:
 
-```bash
+```sh
 codex plugin marketplace add ./evidence-first-scholar-assessment
 ```
+
+The [release ZIP](https://github.com/drecuk/evidence-first-scholar-assessment/releases/latest) is retained for direct downloads, private upload, and package submission. Repository users should normally use the marketplace installation steps above.
 
 ## Example prompts
 
