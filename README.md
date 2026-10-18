@@ -129,6 +129,10 @@ Research assessment can materially affect careers. Reviewers remain responsible 
 
 Please use [GitHub Issues](https://github.com/drecuk/evidence-first-scholar-assessment/issues) for reproducible problems, documentation gaps, or feature requests. Do not post confidential candidate materials or personal data in a public issue.
 
+## License
+
+Evidence-First Scholar Assessment is licensed under the [Apache License 2.0](LICENSE). Unless otherwise noted, the license covers the source code, plugin and skill instructions, documentation, packaged template, and project assets. See [NOTICE](NOTICE) for attribution information.
+
 ## Public directory status
 
 This repository is prepared for direct Git-backed marketplace distribution. It is not represented as approved or listed in OpenAI's universal public Plugins Directory. See [submission readiness](docs/submission-readiness.md) for the remaining publisher-controlled steps.

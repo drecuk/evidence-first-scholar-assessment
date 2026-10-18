@@ -1,7 +1,8 @@
 {
   "name": "evidence-first-scholar-assessment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DORA-informed, evidence-first assessment of research quality and scholarly influence.",
+  "license": "Apache-2.0",
   "author": {
     "name": "drecuk",
     "url": "https://github.com/drecuk"
@@ -31,7 +32,7 @@
     "logo": "./assets/icon.png"
   },
   "publication": {
-    "release_notes": "Initial skills-only release with a DORA-informed assessment workflow, report template, case scaffolding, metric calculation, and validation helpers."
+    "release_notes": "Adds Apache License 2.0 coverage and attribution notices to the repository and standalone plugin package."
   }
 }
 

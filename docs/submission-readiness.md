@@ -5,6 +5,7 @@
 - Portable Agent Plugins 1.0 manifest and Codex compatibility manifest.
 - Skills-only implementation with no MCP server, authentication, commerce, or external service dependency.
 - Marketplace listing text within current length limits.
+- Apache License 2.0 and attribution notices included at repository and package level.
 - Square PNG logo and composer icon included in the package.
 - Three starter prompts and initial release notes.
 - Git-backed marketplace catalog and versioned package workflow.

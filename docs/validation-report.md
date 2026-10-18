@@ -1,4 +1,4 @@
-# Validation report — 1.0.0
+# Validation report — 1.0.1
 
 Validation date: 2026-10-18
 
@@ -8,10 +8,10 @@ Validation date: 2026-10-18
 
 ## Package
 
-- Archive: `evidence-first-scholar-assessment-1.0.0.zip`
-- SHA-256: `7af603abd78a315024347049ee97c387de046bf75d30ed31e6ec7d25406e57b4`
+- Archive: `evidence-first-scholar-assessment-1.0.1.zip`
+- SHA-256: `2ec3ab4230833a43ce4823815f2d1e24f19c9d1c6cdf53da05a5cd6a37c1e040`
 - Archive layout: one enclosing `evidence-first-scholar-assessment/` directory
-- Archive entries: 25
+- Archive entries: 27
 - MCP servers: 0
 - Skills: 1
 
@@ -19,6 +19,8 @@ Validation date: 2026-10-18
 
 - Root portable manifest parsed and passed the published Agent Plugins 1.0 JSON Schema.
 - Codex compatibility manifest and marketplace catalog parsed as valid JSON.
+- Both manifests declare version `1.0.1` and SPDX license identifier `Apache-2.0`.
+- Canonical Apache License 2.0 text and the attribution `NOTICE` are present at repository and package level; paired copies match.
 - `agents/openai.yaml` parsed as valid YAML.
 - Plugin identifier and semantic version validated.
 - Display name: 29/30 characters.
@@ -31,8 +33,8 @@ Validation date: 2026-10-18
 - Helper scripts compiled successfully.
 - Two helper behavior tests passed: non-destructive case initialization and deterministic metric calculation.
 - The report-template DOCX passed ZIP-container integrity testing.
-- The release archive passed compression, unsafe-path, prohibited-file, and single-root checks.
-- A clean extraction repeated skill, script-entrypoint, DOCX, and published-schema validation successfully.
+- The release archive passed compression, unsafe-path, prohibited-file, single-root, license, and notice checks.
+- A clean extraction repeated skill, script-entrypoint, DOCX, published-schema, version, license, and attribution validation successfully.
 
 Machine-readable details are in `docs/validation-report.json`.
 

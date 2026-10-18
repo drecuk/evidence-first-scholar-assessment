@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 — 2026-10-18
+
+- Licensed the repository and standalone plugin package under Apache License 2.0.
+- Added repository-level and package-level `LICENSE` and `NOTICE` files.
+- Declared the SPDX identifier `Apache-2.0` in both plugin manifests.
+
 ## 1.0.0 — 2026-10-18
 
 - Initial public Git-backed marketplace package.

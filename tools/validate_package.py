@@ -90,6 +90,12 @@ def validate_archive(archive: Path, expected_root: str, checks: list[dict[str, s
             add(checks, "FAIL", "archive root", f"missing {manifest}")
         else:
             add(checks, "PASS", "archive root", manifest)
+        for required_name in ("LICENSE", "NOTICE"):
+            required_path = f"{expected_root}/{required_name}"
+            if required_path in names:
+                add(checks, "PASS", f"archive {required_name.lower()}", required_path)
+            else:
+                add(checks, "FAIL", f"archive {required_name.lower()}", f"missing {required_path}")
 
 
 def main() -> int:
@@ -141,6 +147,11 @@ def main() -> int:
             add(checks, "PASS", "plugin version", version)
         else:
             add(checks, "FAIL", "plugin version", repr(version))
+        license_id = manifest.get("license", "")
+        if license_id == "Apache-2.0":
+            add(checks, "PASS", "plugin license", license_id)
+        else:
+            add(checks, "FAIL", "plugin license", f"expected Apache-2.0, found {license_id!r}")
         interface = manifest.get("extensions", {}).get("com.openai", {}).get("interface", {})
         for key, limit in (("displayName", 30), ("shortDescription", 30), ("longDescription", 4000), ("developerName", 80)):
             value = interface.get(key, "")
@@ -182,6 +193,16 @@ def main() -> int:
         add(checks, "FAIL", "source hygiene", ", ".join(prohibited_source))
     else:
         add(checks, "PASS", "source hygiene", "no prohibited files or symlinks")
+
+    for required_name in ("LICENSE", "NOTICE"):
+        repo_file = root / required_name
+        plugin_file = plugin_dir / required_name
+        if not repo_file.is_file() or not plugin_file.is_file():
+            add(checks, "FAIL", f"{required_name.lower()} files", "repository and plugin copies are both required")
+        elif repo_file.read_bytes() != plugin_file.read_bytes():
+            add(checks, "FAIL", f"{required_name.lower()} files", "repository and plugin copies differ")
+        else:
+            add(checks, "PASS", f"{required_name.lower()} files", "repository and plugin copies match")
 
     if args.archive:
         validate_archive(args.archive.resolve(), plugin_dir.name, checks)

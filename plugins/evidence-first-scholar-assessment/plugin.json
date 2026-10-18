@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "evidence-first-scholar-assessment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DORA-informed, evidence-first assessment of an academic's research quality, scholarly influence, trajectory, contribution, robustness, and peer context.",
   "author": {
     "name": "drecuk",
@@ -9,6 +9,7 @@
   },
   "homepage": "https://github.com/drecuk/evidence-first-scholar-assessment",
   "repository": "https://github.com/drecuk/evidence-first-scholar-assessment",
+  "license": "Apache-2.0",
   "keywords": [
     "research-assessment",
     "scholarly-impact",
@@ -43,7 +44,7 @@
         "logo": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "Initial skills-only release with a DORA-informed assessment workflow, report template, case scaffolding, metric calculation, and validation helpers."
+        "release_notes": "Adds Apache License 2.0 coverage and attribution notices to the repository and standalone plugin package."
       }
     }
   }
