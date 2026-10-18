@@ -1,0 +1,21 @@
+{
+  "name": "drecuk-scholar-tools",
+  "interface": {
+    "displayName": "drecuk Scholar Tools"
+  },
+  "plugins": [
+    {
+      "name": "evidence-first-scholar-assessment",
+      "source": {
+        "source": "local",
+        "path": "./plugins/evidence-first-scholar-assessment"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
+

@@ -1,0 +1,10 @@
+interface:
+  display_name: "Evidence-First Scholar Assessment"
+  short_description: "Auditable, DORA-informed research assessment"
+  brand_color: "#063B66"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+  default_prompt: "Use $evidence-first-scholar-assessment to evaluate this scholar's research quality and impact with an auditable, DORA-informed method."
+policy:
+  allow_implicit_invocation: true
+

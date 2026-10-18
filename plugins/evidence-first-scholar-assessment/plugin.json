@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "evidence-first-scholar-assessment",
+  "version": "1.0.0",
+  "description": "DORA-informed, evidence-first assessment of an academic's research quality, scholarly influence, trajectory, contribution, robustness, and peer context.",
+  "author": {
+    "name": "drecuk",
+    "url": "https://github.com/drecuk"
+  },
+  "homepage": "https://github.com/drecuk/evidence-first-scholar-assessment",
+  "repository": "https://github.com/drecuk/evidence-first-scholar-assessment",
+  "keywords": [
+    "research-assessment",
+    "scholarly-impact",
+    "DORA",
+    "bibliometrics",
+    "peer-benchmarking",
+    "academic-appointments"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Evidence-First Scholar Review",
+        "shortDescription": "Auditable scholar assessment",
+        "longDescription": "Assess an academic's research quality and scholarly influence through identity-validated evidence, output-level reading, responsible metrics, contribution attribution, matched-peer context, uncertainty analysis, and auditable reporting. Designed for promotion, tenure, senior appointments, chair-professorship review, and due diligence. Quantitative indicators support rather than replace qualitative judgment; journal prestige, titles, and raw profile totals are not treated as automatic evidence of quality.",
+        "developerName": "drecuk",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write",
+          "Research",
+          "Analysis"
+        ],
+        "websiteURL": "https://github.com/drecuk/evidence-first-scholar-assessment",
+        "supportURL": "https://github.com/drecuk/evidence-first-scholar-assessment/issues",
+        "defaultPrompt": [
+          "Assess this scholar's research quality and impact using an evidence-first, DORA-informed approach.",
+          "Audit this academic profile for identity errors, metric limitations, and unsupported impact claims.",
+          "Create an auditable senior-appointment research assessment with matched-peer context."
+        ],
+        "brandColor": "#063B66",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "Initial skills-only release with a DORA-informed assessment workflow, report template, case scaffolding, metric calculation, and validation helpers."
+      }
+    }
+  }
+}
+
