@@ -9,8 +9,8 @@ The evaluator begins by validating the scholar's bibliographic identity, reads a
 The instruction prompt is simple. After installation, type this into Codex:
 
 ```
-   Evaluate this scholar: [provide a web link to the scholar profile/bio, or a google scholar page]
-   Generate a comprehensive PDF report
+   Evaluate this scholar and generate a comprehensive PDF report:
+   [provide a web link to the scholar profile/bio, or a google scholar page]
 ```
 
 ## DORA-informed assessment
